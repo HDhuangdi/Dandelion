@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/reg.js"></script>
+</head>
+<body>
+    <header>
+        <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+    </header>
+    <section class="bg-skyblue py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="content p-4 bg-white">
+                        <div class="text-center mt-4">
+                            <h3>创建账号</h3>
+                            <p class="text-muted">输入您的信息以创建账号</p>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><p class="font-weight-bold">用户名:</p></li>
+                            <li class="mb-3"><input type="text" class="form-control" id="uname"></li>
+                            <li class="mb-3"><p class="font-weight-bold" id="upwd">密码:</p></li>
+                            <li class="mb-3"><input type="text" class="form-control"></li>
+                            <li class="mb-3"><p class="font-weight-bold" id="cpwd">确认密码:</p></li>
+                            <li class="mb-3"><input type="text" class="form-control"></li>
+                            <li class="mb-3"><p class="font-weight-bold" id="email">电子邮件:</p></li>
+                            <li class="mb-3"><input type="text" class="form-control"></li>
+                            <li class="mb-3"><p class="font-weight-bold" id="phone">联系方式:</p></li>
+                            <li class="mb-3"><input type="text" class="form-control"></li>
+                            <button onclick="fn()" class="text-center mt-5 registerBtn d-block py-3 bg-skyblue text-white w-100">创建账号</button>
+                            <p class="mt-3">已经有一个账户? <a href="" class="font-weight-bold">登录到您的账户</a></p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 pt-5 pl-5">
+                    <img src="images/img1.jpg" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+    </footer>
+</body>
+</html>

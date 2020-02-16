@@ -1,0 +1,43 @@
+header{
+    box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.bg-skyblue {
+    background: #105ae4;
+}
+.icon-dandelion{
+    font-size: 30px !important;
+}
+#navbarcollapse>ul a{
+    color: #fff;
+    transition: color .5s;
+}
+#navbarcollapse>ul a:hover{
+    color: rgba(255,255,255,.6);
+}
+#navbarcollapse>ul>li:last-child a{
+    width: 121px;
+    height: 40px;
+    color: #105ae4;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+}
+@media screen and (min-width: 992px) {
+    #reg {
+        margin-left: 80px;
+    }
+    #navbarcollapse{
+        margin-left: 0px;
+    }
+}
+.navbar-nav .dropdown-menu a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 30px;
+    position: static;
+    float: none;
+    color: rgba(19, 19, 19, 0.84) !important;
+}

@@ -1,0 +1,74 @@
+footer{
+    background: #17181b;
+    color: #727377;
+    font-size: 14px;
+}
+footer>.container ul li p,footer>.container ul li a{
+    color: #727377;
+    margin: 0 0 5px 0;
+    line-height: 1.8em;
+    letter-spacing: .3px;
+    transition:color 1s;
+}
+footer>.container ul li{
+    margin: 0 0 5px 0;
+    position: relative;
+}
+footer>.container ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+footer>.container ul li input{
+    height: 36px;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #727377;
+    border-right: transparent;
+    border-radius: 0;
+    outline: none;
+    color: white;
+}
+footer>.container ul li .bSend{
+    height: 36px;
+    width: 36px;
+    background: transparent;
+    border: 1px solid #727377;
+    border-left: transparent;
+    color: #727377;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+}
+footer>.container>div:nth-child(2)>.icon-dandelion,footer>.container>div:nth-child(2)>p{
+    color: #EEE;
+    font-size: 40px;
+}
+footer>.container>div:nth-child(2)>.icon-dandelion{
+    font-size: 47px;
+}
+footer>.container>div:nth-child(3)>p{
+    line-height: 30px;
+}
+footer>div:nth-child(2){
+    letter-spacing: 1px;
+    color: #999;
+    line-height: 1em;
+    background: #1c1d21;
+
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+@media (min-width:992px){
+    footer>.container ul li input{
+        width: 263px;
+    }
+}
+@media(max-width:991px){
+    footer>.container ul li input{
+        width: 80%;
+    }
+}

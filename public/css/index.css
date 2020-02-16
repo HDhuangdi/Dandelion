@@ -1,0 +1,391 @@
+
+
+/* banner1相关样式 */
+.banner_1,.banner_2{
+    height: 650px;
+    background: #105ae4;
+    padding-top:76px;
+    display: flex;
+    color: #fff;
+    font-family: 微软雅黑;
+    overflow: hidden;
+}
+.banner_1>.container,.banner_2>.container{
+    display: flex;
+}
+.banner_1>.container>div>h1,.banner_2>.container>div>h1{
+    margin-bottom: 20px;
+}
+.banner_1>.container>div>p,.banner_2>.container>div>p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.banner_1>.container>div>a,.banner_2>.container>div>a{
+    display: block;
+    text-decoration: none;
+    width: 121px;
+    height: 47px;
+    line-height: 47px;
+    font-size: 14px;
+    color: #105ae4;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+.banner_1>.container>div>a:hover,.banner_2>.container>div>a:hover{
+    color: #fff;
+    background: #104eb9;
+}
+.banner_1>.container>div,.banner_2>.container>div{
+    margin: 6rem 0rem 0rem 1rem;
+}
+.banner_1>.container>.position,.banner_2>.container>.position{
+    width: 22.5rem;
+    height: 28.3rem;
+    transform: rotate(-30deg) skew(25deg) scale(.73);
+    margin: 10rem 0 0 12rem;
+    position: relative;
+}
+.effect-w3 img{
+    width: 100%;
+    position: absolute;
+}
+/* 1F 关于相关样式 */
+.about>.container>.row{
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+}
+.about>.container>.row>div{
+    background: #f8f9fa;
+    color: #666;
+    transition:background 1s;
+}
+.about>.container>.row>div:hover{
+    background: #1963eb;
+    color: white;
+}
+.about>.container>.row>div:nth-child(2){
+    background: #1963eb;
+    color: white;
+}
+.about>.container>.row>div p{
+    font-size: 15px;
+    line-height: 30px;
+}
+.about .font_sight{
+    font-size: 40px;
+}
+.about .font_window{
+    font-size: 38px;
+}
+.about .font_computer{
+    font-size: 32px;
+}
+
+/* 2F 特色服务相关样式 */
+.whatWeDo>div .row>div>div{
+    height: 250px;
+}
+.whatWeDo>div .row>div>div:first-child{
+    background: #f8f9fa;
+    color: #000;
+}
+.whatWeDo>div .row>div>div:first-child:hover{
+    background: #1963eb;
+    color: white;
+}
+.whatWeDo>div .row>div>div:first-child>h3,.whatWeDo>div .row>div>div:last-child>h3{
+    font-size: 1.2em;
+}
+.whatWeDo>div .row>div>div:first-child>p,.whatWeDo>div .row>div>div:last-child>p{
+    font-size: 0.9em;
+    line-height: 2em;
+}
+.whatWeDo>div .row>div>div:last-child{
+    background: #1963eb;
+    color: white;
+}
+.whatWeDo>div .row>div>div:last-child>p{
+    color: white;
+}
+/* 数据统计相关样式 */
+.numbers{
+    background: #f7f7f7;
+}
+.numbers>div>div>h3{
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #1963eb;
+}
+.numbers>div>div>p{
+    font-size: 13px;
+    text-align: center;
+    color: #333435;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+/* 3F 团队介绍相关样式 */
+.team>.container>.row>div{
+    background: #f8f9fa;
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+}
+.team>.container>.row>div:not(:last-child){
+    border-right: 1px solid #e4e6e6;
+}
+.team>.container>.row>div>div>img{
+   border-radius: 50%;
+   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
+   margin-bottom: 20px;
+}
+.team>.container>.row>div>div>.designer{
+    font-size: 0.6em;
+    color: #1963eb;
+    font-weight: 700;
+    letter-spacing: 2px;
+ }
+ .team>.container>.row>div>div>.dName{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #262631;
+ }
+ .team>.container>.row>div>div>.detail{
+    font-size: 0.9em;
+    color: #8c9398;
+    line-height: 2em;
+ }
+/* 4F 技能数据相关样式 */
+.skill>.row ul li p{
+    color: inherit;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.skill>.row ul li>div{
+    height: 8px;
+    width: 90%;
+ }
+.skill>.row ul li:first-child>div>div{
+   width: 60%;
+}
+.skill>.row ul li:nth-child(2)>div>div{
+    width: 70%;
+ }
+ .skill>.row ul li:nth-child(3)>div>div{
+    width: 80%;
+ }
+ .skill>.row ul li:last-child>div>div{
+    width: 90%;
+ }
+ /* 5F 技能数据相关样式 */
+
+ .works>.container>ul>li>a{
+    display: block;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #1e2d3a;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: .5s;
+ }
+ .works>.container>ul>li>a.active{
+    background: #1963eb;
+    color: white;
+ }
+ .works>.container>ul>li>a:hover{
+    background: #FF4081;
+    color: white;
+    text-decoration: none;
+ }
+ .works>.container>.pics>ul>li>img:hover{
+     box-shadow: 1px 12px 26px 9px rgba(0, 0, 0, 0.164);
+ }
+ /* 6F banner_2相关样式 */
+ .banner_2{
+     background: #262631;
+ }
+ .banner_2>.container>.textContenter>p{
+     color: #818192;
+ }
+/* 7F 轮播相关样式 */
+.blog{
+    background:#f5f5f5;
+}
+.blog>.container>#carouselExampleIndicators>ul>li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #a2a6aa;
+}
+.blog>.container>#carouselExampleIndicators>ul>li.active{
+    background: #0d57df;
+}
+.blog #carouselExampleIndicators .carousel-inner .row>div{
+    padding: 6rem 1rem;
+    
+}
+.blog #carouselExampleIndicators .carousel-inner .row>div>div{
+    background: white;
+}
+.blog .detail{
+    color: #262631;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.blog .dName{
+    color: #1963eb;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+.blog .cName{
+    font-size: 13px;
+    line-height: 0.5em;
+    color: #8c9398;
+}
+.blog #carouselExampleIndicators .carousel-inner .row>div>div>p>span{
+    color: #105ae4;
+    font-size: 30px;
+}
+.blog #carouselExampleIndicators .carousel-inner .row>div>div img{
+    border-radius: 50%;
+}
+.about,.whatWeDo,.numbers,.team,.skill,.works,.banner_2{
+    margin-top: 100px;
+}
+.blog{
+    padding-top: 100px;
+}
+/* 媒体查询 */
+/* 超大屏 */
+@media (min-width: 1200px){
+    .effect-w3 img:first-child{
+        opacity: .25;
+        transform: translate(48px,-48px);
+        transition: .7s;
+    }
+    .effect-w3 img:nth-child(2){
+        opacity: .5;
+        transform: translate(96px,-96px);
+        transition: .7s;
+    }
+    .effect-w3 img:nth-child(3){
+        opacity: .75;
+        transform: translate(144px,-144px);
+        transition: .7s;
+    }
+    .effect-w3 img:last-child{
+        transform: translate(192px,-192px);
+        transition: .7s;
+    }
+    .banner_2>.container>.position{
+        margin: 10rem 17rem 0rem 6rem;
+    }
+}
+/* 大屏 */
+@media (min-width: 992px) and (max-width: 1199px){
+    .effect-w3 img:first-child{
+        opacity: .25;
+        transform: translate(30px,-30px);
+        transition: .7s;
+    }
+    .effect-w3 img:nth-child(2){
+        opacity: .5;
+        transform: translate(60px,-60px);
+        transition: .7s;
+    }
+    .effect-w3 img:nth-child(3){
+        opacity: .75;
+        transform: translate(90px,-90px);
+        transition: .7s;
+    }
+    .effect-w3 img:last-child{
+        transform: translate(120px,-120px);
+        transition: .7s;
+    }
+    .banner_2>.container>.position{
+        margin: 9rem 9rem 0rem 8rem;
+    }
+}
+/* 中屏 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .effect-w3 img:first-child {
+        opacity: .25;
+        transform: translate(20px, -20px);
+        transition: .7s;
+    }
+
+    .effect-w3 img:nth-child(2) {
+        opacity: .5;
+        transform: translate(40px, -40px);
+        transition: .7s;
+    }
+
+    .effect-w3 img:nth-child(3) {
+        opacity: .75;
+        transform: translate(60px, -60px);
+        transition: .7s;
+    }
+
+    .effect-w3 img:last-child {
+        transform: translate(80px, -80px);
+        transition: .7s;
+    }
+    .banner_2>.container>.position{
+        margin: 5rem 0rem 0rem 2rem;
+    }
+    .banner_1,.banner_2 {
+        height: 550px;
+        transition: .25s;
+    }
+}
+/* 中屏以下 */
+@media(max-width: 767px){
+    .effect-w3 img:first-child{
+        opacity: .25;
+        transform: translate(20px,-20px);
+        transition:transform  .7s;
+        width: 55%;
+    }
+    .effect-w3 img:nth-child(2){
+        opacity: .5;
+        transform: translate(40px,-40px);
+        transition:transform .7s;
+        width: 55%;
+    }
+    .effect-w3 img:nth-child(3){
+        opacity: .75;
+        transform: translate(60px,-60px);
+        transition:transform .7s;
+        width: 55%;
+    }
+    .effect-w3 img:last-child{
+        transform: translate(80px,-80px);
+        transition:transform .7s;
+        width: 55%;
+    }
+    .banner>.container{
+        flex-direction: column;
+    }
+    .banner_1>.container>.position{
+        margin: 24rem 7rem -53rem -30rem !important;
+    }
+    .banner_2>.container>.position{
+        margin: 26rem -8rem -16rem 2rem;
+    }
+    .banner_1,.banner_2{
+        height: 800px;
+        transition: .5s;
+    }
+    .banner_1>.container>div:last-child,.banner_2>.container>div:last-child{
+        margin-left: -15rem;
+    }
+}
+
