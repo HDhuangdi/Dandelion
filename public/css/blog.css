@@ -1,0 +1,65 @@
+/* 左边 */
+.container .div_left .blog_author{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #888;
+}
+.container .div_left .blog_detail>a{
+    font-size: 0.9em;
+    color: #8c9398;
+    line-height: 2em;
+    transition: color .5s;
+}
+.container .div_left .blog_detail>a:hover{
+    color: rgb(41, 41, 41);
+}
+.container .div_left .more{
+    color: #FC427B;
+    transition: color .5s;
+}
+.container .div_left .more:hover{
+    color: rgb(66, 85, 252);
+}
+.container .div_left .list-group>.list-group-item{
+    font-size: 80%;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.container .div_left .pagination .page-link{
+    transition: background-color .5s;
+}
+/* 右边 */
+.container .div_right>.subscribe,.container .div_right>.news .card-body{
+    background: #f5f5f5;
+}
+.container .div_right>.subscribe>input{
+    outline: none;
+    height: 43px;
+    font-size: 13px;
+}
+.container .div_right>.subscribe>a{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #4f5665;
+    color: white;
+    transition: background .5s;
+}
+.container .div_right>.subscribe>a:hover{
+    background: #0c57e1;
+}
+.container .div_right>.news .card-title>a{
+   color: black;
+   transition: color .5s;
+}
+.container .div_right>.news .card-title>a:hover{
+   color:#FC427B;
+}
+.container .div_right>.news .card-text>a{
+    color: #757575;
+    transition: color .5s;
+ }
+ .container .div_right>.news .card-text>a:hover{
+    color: black;
+    transition: color .5s;
+ }

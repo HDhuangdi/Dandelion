@@ -62,13 +62,12 @@ function phone_check(){
 //提交ajax请求
 function submit(){
     var obj = outer()();
-    var xhr = new XMLHttpRequest();
-    xhr.open('post','/user/reg',true);
-    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    xhr.send(`uname=${obj.uname}&upwd=${obj.upwd}&email=${obj.email}&phone=${obj.phone}`);
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 &&xhr.status==200){
-            alert(xhr.responseText);
-        }
-    }
+    ajax({
+        url:'http://localhost:8080/user/reg',
+        type:'post',
+        data:`uname=${obj.uname}&upwd=${obj.upwd}&email=${obj.email}&phone=${obj.phone}`
+    }).then(result=>{
+        alert(result.msg);
+    })
 }
+

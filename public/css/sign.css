@@ -1,0 +1,48 @@
+
+.container .content ul>li>input{
+    outline: none;
+    height:50px
+}
+.container .content{
+    border-radius: 1rem;
+    box-shadow: 15px 23.15px 15.1px 1px rgba(0, 0, 0, 0.3);
+}
+.remember{
+    vertical-align: middle;
+    margin-bottom: 6.7px;
+}
+#signinBtn{
+    border: 0;
+    box-shadow: 15px 6.15px 12.1px 1px rgba(0, 0, 0, 0.3);
+    transition: background .5s;
+    cursor: pointer;
+}
+/* 媒体查询 */
+/* 超大屏 */
+@media (min-width: 1200px){
+    section{
+        padding-top: 50px;
+    }
+    .left{
+        padding-top: 100px;
+    }
+}
+/* 大屏 */
+@media (min-width: 992px) and (max-width: 1199px){
+    section{
+        padding-top: 50px;
+    }
+    .left{
+        padding-top:60px
+    }
+}
+/* 中屏 */
+@media (min-width: 768px) and (max-width: 991px) {
+    section{
+        padding-top: 50px;
+    }
+}
+/* 中屏以下 */
+@media(max-width: 767px){
+
+}
