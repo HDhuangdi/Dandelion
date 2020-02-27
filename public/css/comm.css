@@ -86,10 +86,7 @@ footer iframe,header iframe{
     }
 }
 /*********************************博客页公共样式***********************/
-section{
-    padding-top: 120px;
-    background-color: #f1f1f1;
-}
+
 /*全局样式*/
 .shadow-box{
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.14);
