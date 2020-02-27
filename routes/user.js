@@ -27,9 +27,9 @@ router.post('/reg',function(req,res){
         }
         console.log(data);
         if(data.affectedRows == 1){
-            res.send({code:200,msg:'登录成功'});
+            res.send({code:200,msg:'注册成功'});
         }else{
-            res.send({code:405,msg:'登录失败'});
+            res.send({code:405,msg:'注册失败'});
         }
         
     })

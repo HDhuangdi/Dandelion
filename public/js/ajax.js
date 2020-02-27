@@ -1,20 +1,24 @@
-function ajax({url,type='get',data}){
-    return new Promise((resolve,reject)=>{
-        var xhr = new XMLHttpRequest();
-        if(type == 'get'){
-            url += '?'+data;
+function ajax({
+    url,
+    type = "get",
+    data
+}) {
+    return new Promise((resolve, rejected) => {
+        if (type == "get") {
+            url += "?" + data;
         }
-        xhr.open(type,url,true);
-        xhr.onreadystatechange = function(){
-            if(xhr.readyState == 4 &&xhr.status==200){
-                result = JSON.parse(xhr.responseText);
+        var xhr = new XMLHttpRequest();
+        xhr.open(type, url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var result = JSON.parse(xhr.responseText);
                 resolve(result);
             }
         }
-        if(type == 'post'){
-            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        if (type == "post") {
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
             xhr.send(data)
-        }else{
+        } else {
             xhr.send();
         }
     })

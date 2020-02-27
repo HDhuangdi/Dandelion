@@ -6,14 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/reg.css">
     <link rel="stylesheet" href="css/comm.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
-    <script src="js/reg.js"></script>
-    <script src="js/ajax.js"></script>
 </head>
 <body>
     <header>
@@ -30,16 +25,16 @@
                         </div>
                         <ul class="list-unstyled">
                             <li class="mb-3 d-flex"><p class="font-weight-bold">用户名:</p><p id="uname_msg" class="pl-3 font-sm"></p></li>
-                            <li class="mb-3 d-flex"><input type="text" class="form-control" id="uname" onblur=uname_check()></li>
+                            <li class="mb-3 d-flex"><input type="text" class="form-control" data-blur="uname"></li>
                             <li class="mb-3 d-flex"><p class="font-weight-bold">密码:</p><p id="upwd_msg" class="pl-3 font-sm"></p></li>
-                            <li class="mb-3 d-flex"><input type="password" class="form-control" id="upwd"onblur=upwd_check()></li>
+                            <li class="mb-3 d-flex"><input type="password" class="form-control" data-blur="upwd"></li>
                             <li class="mb-3 d-flex"><p class="font-weight-bold">确认密码:</p><p id="cpwd_msg" class="pl-3 font-sm"></p></li>
-                            <li class="mb-3 d-flex"><input type="password" class="form-control" id="cpwd"onblur=cpwd_check()></li>
+                            <li class="mb-3 d-flex"><input type="password" class="form-control" data-blur="cpwd"></li>
                             <li class="mb-3 d-flex"><p class="font-weight-bold">电子邮件:</p><p id="email_msg" class="pl-3 font-sm"></p></li>
-                            <li class="mb-3 d-flex"><input type="text" class="form-control" id="email"onblur=email_check()></li>
+                            <li class="mb-3 d-flex"><input type="text" class="form-control" data-blur="email"></li>
                             <li class="mb-3 d-flex"><p class="font-weight-bold">联系方式:</p><p id="phone_msg" class="pl-3 font-sm"></p></li>
-                            <li class="mb-3 d-flex"><input type="text" class="form-control" id="phone"onblur=phone_check()></li>
-                            <button onclick="submit()" class="text-center mt-5 d-block py-3 bg-skyblue text-white w-100" id="registerBtn">创建账号</button>
+                            <li class="mb-3 d-flex"><input type="text" class="form-control" data-blur="phone"></li>
+                            <button data-click="button" class="text-center mt-5 d-block py-3 bg-skyblue text-white w-100">创建账号</button>
                             <p class="mt-3">已经有一个账户? <a href="" class="font-weight-bold">登录到您的账户</a></p>
                         </ul>
                     </div>
@@ -53,5 +48,10 @@
     <footer>
         <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/reg.js"></script>
 </body>
 </html>
