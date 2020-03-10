@@ -1,5 +1,5 @@
 section{
-    padding-top: 120px;
+    padding-top: 1px;
     background-color: #f1f1f1;
 }
 /* 导航 */
@@ -9,20 +9,28 @@ section{
 .container .navbar h6>a{
     color:gray;
 }
-/* 左边博客详情 */
+/* 博客主体*/
 .container .blog-list .left .card .card-body blockquote{
     background-color: #e0e0e0;
     margin: 20px 0;
     padding: 15px;
     border-left: 5px solid #2962ff;
 }
-/* icons */
+.container .blog-list .left .card-text h6{
+    font-weight: bold;
+    margin: 50px 0;
+}
+.container .blog-list .left .card-text p{
+    font-size: 13px;
+    line-height: 40px;
+}
+    /* icons */
 .container .blog-list .left .icons::after{
     content: "";
     display: block;
     clear: both;
 }
-.container .blog-list .left .icons a{
+.container .blog-list .left .icons>div>a{
     font-size: 14px;
     display: block;
     padding: 0px 10px;
@@ -30,8 +38,47 @@ section{
     color: rgb(75, 75, 75);
     transition: background-color .5s;
 }
-.container .blog-list .left .icons a:hover{
+.container .blog-list .left .icons>div>a:hover{
     background-color: #2962ff;
     color: white;
 }
+/* 评论 */
+.container .blog-list .left .comments .comment .uname{
+    color: #2962ff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .blog-list .left .comments .comment .text,.container .blog-list .left .comments .comment .icons a{
+    color: #5e5e5e;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container .blog-list .left .comments .comment .icons>li>a{
+    font-size: 14px;
+}
+.container .blog-list .left .comments .comment .comment-S.show{
+    height: 145px;
+}
+.container .blog-list .left .comments .comment .comment-S{
+    height:0px;
+    padding: 0 50px 0 100px;
+    overflow: hidden;
+    transition: height .5s;
+}
+.container .blog-list .left .comments .reply textarea{
+    resize: none;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    outline: none;
+}
+.container .blog-list .left .comments .reply .btn{
+    flex-grow: 1;
+}
+.container .blog-list .left .comments .reply .btn>a{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 

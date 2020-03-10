@@ -1,64 +1,66 @@
 section{
-    padding-top: 120px;
+    padding-top: 55px;
     background-color: #f1f1f1;
 }
-/* 轮播图相关样式 */
-.container .carousel .carousel-inner .img{
-    height: 400px;
-    width: 1140px;
-}
-.container .carousel .carousel-inner .carousel-caption{
-    background-color: rgba(234, 230, 233, .8);
-    height: 60%;
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 0 100px;
-    font-size: 14px;
-    color: #5e5e5e;
-    transform: translate(-50%,-50%);
-}
-.container .carousel .carousel-inner .carousel-caption>h5{
-   margin-top: 50px;
-}
-.container .carousel .carousel-inner .carousel-caption>p{
-   margin-top: 40px;
-   line-height: 30px;
-}
-.container .carousel .carousel-inner .carousel-caption a{
-    color: #105ae4;
-}
-.carousel ol li{
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    cursor: pointer;
-}
-.carousel ol li.active{
-    background-color: #105ae4;
-}
 /* 横向列表样式 */
-.container .transverse>ul>li .card{
+.container .transverse .list{
+    overflow: hidden;
+    margin: 0 35px;
+}
+.container .transverse .prev{
+    left:3px;
+    top:92px;
+}
+.container .transverse .next{
+    left:1100px;
+    top:92px;
+}
+.container .transverse .prev,.container .transverse .next{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: #105ae4;
+    color: white;
+    border-radius: 50%;
+    font-weight: bolder;
+    transition: background .5s,color .5s
+}
+.container .transverse>a:hover{
+    background-color: #ed679b !important;
+    color: black !important;
+}
+.container .transverse ul{
+    transition: margin .7s;
+}
+.container .transverse ul>li{
+    width:325px;
+    height:116px
+}
+.container .transverse ul>li:not(:last-child){
+    margin-right: 20px;
+}
+.container .transverse ul>li .card{
     width: 325px;
 }
-.container .transverse>ul>li .card .card-body,.container .transverse>ul>li .card .card-body .card-text>a{
+.container .transverse ul>li .card .card-body,.container .transverse ul>li .card .card-body .card-text>a{
     font-size: 14px;
 }
-.container .transverse>ul>li .card .card-body .card-text>p{
+.container .transverse ul>li .card .card-body .card-text>p{
     color: #eae6df;
 }
-.container .transverse>ul>li .card .card-body .card-text>a{
+.container .transverse ul>li .card .card-body .card-text>a{
     color: #5e5e5e;
 }
-.container .transverse>ul>li .card .card-body .card-text>a:hover{
+.container .transverse ul>li .card .card-body .card-text>a:hover{
     color: #105ae4;
 }
-.container .transverse>ul>li .card .card-body h5>a{
+.container .transverse ul>li .card .card-body .card-title>a{
     font-size: 17px;
     color: #000;
 }
-.container .transverse>ul>li .card .row>a{
+.container .transverse ul>li .card .row>a{
     width: 40%;
 }
 /* 博客列表样式见comm.css */
