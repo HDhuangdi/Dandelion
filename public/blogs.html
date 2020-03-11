@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,124 +13,30 @@
     <link rel="stylesheet" href="css/comm.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
+
 <body>
     <header></header>
     <section class="firstFloor">
         <div class="container">
-            <!-- 横向博客列表 -->
-            <div class="pt-5 transverse position-relative">
-                <div class="list w-80 pl-3">
-                    <ul class="list-unstyled d-flex justify-content-between mb-0">
-                        
-                    </ul>
-                </div>
-                <a href="javascript:;" class="prev position-absolute d-block iconfont icon-houtui"></a>
-                <a href="javascript:;" class="next position-absolute d-block iconfont icon-qianjin"></a>
+            <!-- 导航 -->
+            <div class="types d-flex justify-content-around ">
+                <a href="javascript:;" class="active" id="all">全部</a>
+                <a href="javascript:;" id="shangxi">赏析</a>
+                <a href="javascript:;" id="jiaoxue">教学</a>
+                <a href="javascript:;" id="fangfa">方法</a>
+                <a href="javascript:;" id="zhanshi">展示</a>
             </div>
             <!-- 博客显示列表 -->
             <div class="blog-list mt-5">
+                <div class="sort d-flex">
+                    <p>排序：</p>
+                    <a href="javascript:;" id="byTime" data-sort="asc">最新发布</a>
+                    <a href="javascript:;" id="byLikes" data-sort="desc">最热</a>
+                </div>
                 <div class="row">
                     <!-- 左边博客 -->
                     <div class="col-lg-8 col-md-12 left">
-                        <div class="card radius-border shadow-box mb-5">
-                            <a href=""><img src="images/blogs/selfie.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body d-flex flex-column pb-0">
-                                <p class="tagName">生活方式</p>
-                                <a class="card-title" href="">Labore Etdolore Magna Aliqua Utero Ratione</a>
-                                <p class="card-text font-sm-grey">Neque porro quisquam est qui dolorem ipsum quia dolor
-                                    sit amet, consectetur adipisci velit sed quia non numquam eius modi tempora incidunt
-                                    ut labore et dolore magnam aliquam.</p>
-                                <div class="card-foot d-flex justify-content-between">
-                                    <p class="author font-sm-grey">By-
-                                        <a href="">SujonMaji</a>
-                                        <span class="iconfont icon-calendar ml-3 font-sm-grey">
-                                            <span class="pl-1">2020-02-28</span>
-                                        </span>
-                                    </p>
-                                    <p class="icon">
-                                        <a href="" class="font-sm-grey iconfont icon-xihuanlike
-                                     mr-2"><span class="pl-1">55</span></a>
-                                        <a href="" class="font-sm-grey iconfont icon-pinglun"><span
-                                                class="pl-1">32</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card radius-border shadow-box mb-5">
-                            <a href=""><img src="images/b1.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body d-flex flex-column pb-0">
-                                <p class="tagName">生活方式</p>
-                                <a class="card-title" href="">Labore Etdolore Magna Aliqua Utero Ratione</a>
-                                <p class="card-text font-sm-grey">Neque porro quisquam est qui dolorem ipsum quia dolor
-                                    sit amet, consectetur adipisci velit sed quia non numquam eius modi tempora incidunt
-                                    ut labore et dolore magnam aliquam.</p>
-                                <div class="card-foot d-flex justify-content-between">
-                                    <p class="author font-sm-grey">By-
-                                        <a href="">SujonMaji</a>
-                                        <span class="iconfont icon-calendar ml-3 font-sm-grey">
-                                            <span class="pl-1">2020-02-23</span>
-                                        </span>
-                                    </p>
-                                    <p class="icon">
-                                        <a href="" class="font-sm-grey iconfont icon-xihuanlike
-                                     mr-2"><span class="pl-1">55</span></a>
-                                        <a href="" class="font-sm-grey iconfont icon-pinglun"><span
-                                                class="pl-1">32</span></a>
-                                    </p>
-                                </div>
 
-                            </div>
-                        </div>
-                        <div class="card radius-border shadow-box mb-5">
-                            <a href=""><img src="images/b2.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body d-flex flex-column pb-0">
-                                <p class="tagName">生活方式</p>
-                                <a class="card-title" href="">Labore Etdolore Magna Aliqua Utero Ratione</a>
-                                <p class="card-text font-sm-grey">Neque porro quisquam est qui dolorem ipsum quia dolor
-                                    sit amet, consectetur adipisci velit sed quia non numquam eius modi tempora incidunt
-                                    ut labore et dolore magnam aliquam.</p>
-                                <div class="card-foot d-flex justify-content-between">
-                                    <p class="author font-sm-grey">By-
-                                        <a href="">SujonMaji</a>
-                                        <span class="iconfont icon-calendar ml-3 font-sm-grey">
-                                            <span class="pl-1">2020-02-23</span>
-                                        </span>
-                                    </p>
-                                    <p class="icon">
-                                        <a href="" class="font-sm-grey iconfont icon-xihuanlike
-                                     mr-2"><span class="pl-1">55</span></a>
-                                        <a href="" class="font-sm-grey iconfont icon-pinglun"><span
-                                                class="pl-1">32</span></a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card radius-border shadow-box mb-5">
-                            <a href=""><img src="images/b3.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body d-flex flex-column pb-0">
-                                <p class="tagName">生活方式</p>
-                                <a class="card-title" href="">Labore Etdolore Magna Aliqua Utero Ratione</a>
-                                <p class="card-text font-sm-grey">Neque porro quisquam est qui dolorem ipsum quia dolor
-                                    sit amet, consectetur adipisci velit sed quia non numquam eius modi tempora incidunt
-                                    ut labore et dolore magnam aliquam.</p>
-                                <div class="card-foot d-flex justify-content-between">
-                                    <p class="author font-sm-grey">By-
-                                        <a href="">SujonMaji</a>
-                                        <span class="iconfont icon-calendar ml-3 font-sm-grey">
-                                            <span class="pl-1">2020-02-23</span>
-                                        </span>
-                                    </p>
-                                    <p class="icon">
-                                        <a href="" class="font-sm-grey iconfont icon-xihuanlike
-                                     mr-2"><span class="pl-1">55</span></a>
-                                        <a href="" class="font-sm-grey iconfont icon-pinglun"><span
-                                                class="pl-1">32</span></a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                     <!-- 右边信息 -->
                     <div class="col-lg-4 col-md-12 right">
@@ -186,4 +93,5 @@
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
 </body>
+
 </html>

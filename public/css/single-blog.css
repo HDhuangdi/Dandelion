@@ -9,6 +9,67 @@ section{
 .container .navbar h6>a{
     color:gray;
 }
+/* 横向列表样式 */
+.container .transverse .list{
+    overflow: hidden;
+    margin: 0 35px;
+}
+.container .transverse .prev{
+    left:3px;
+    top:92px;
+}
+.container .transverse .next{
+    left:1100px;
+    top:92px;
+}
+.container .transverse .prev,.container .transverse .next{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: #105ae4;
+    color: white;
+    border-radius: 50%;
+    font-weight: bolder;
+    transition: background .5s,color .5s
+}
+.container .transverse>a:hover{
+    background-color: #ed679b !important;
+    color: black !important;
+}
+.container .transverse ul{
+    transition: margin .7s;
+}
+.container .transverse ul>li{
+    width:325px;
+    height:116px
+}
+.container .transverse ul>li:not(:last-child){
+    margin-right: 20px;
+}
+.container .transverse ul>li .card{
+    width: 325px;
+}
+.container .transverse ul>li .card .card-body,.container .transverse ul>li .card .card-body .card-text>a{
+    font-size: 14px;
+}
+.container .transverse ul>li .card .card-body .card-text>p{
+    color: #eae6df;
+}
+.container .transverse ul>li .card .card-body .card-text>a{
+    color: #5e5e5e;
+}
+.container .transverse ul>li .card .card-body .card-text>a:hover{
+    color: #105ae4;
+}
+.container .transverse ul>li .card .card-body .card-title>a{
+    font-size: 17px;
+    color: #000;
+}
+.container .transverse ul>li .card .row>a{
+    width: 40%;
+}
 /* 博客主体*/
 .container .blog-list .left .card .card-body blockquote{
     background-color: #e0e0e0;

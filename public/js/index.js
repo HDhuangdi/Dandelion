@@ -14,6 +14,7 @@ $(function () {
         success(result) {
             var {
                 banner,
+                secondFloor,
                 firstFloor,
                 thirdFloor,
                 fourthFloor,
@@ -74,7 +75,8 @@ $(function () {
         </div>`;
             $(".about").html(html)
             //2F 特色服务
-            var [t1, t2] = thirdFloor
+            var [t1, t2] = secondFloor
+            console.log(t1)
             var html = `<div class="container">
             <div class="text-center mb-5">
                 <p class="m-0 font-plumRed font-weight-bold">我们的</p>
